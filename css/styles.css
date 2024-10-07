@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Silkscreen:wght@400;700&display=swap&family=Dosis:wght@200..800&family=Send+Flowers&display=swap');
+
+
+/* CSS Custom properties */
+
+:root {
+  /* Define Colors as colors */
+  --green: #00ebc7;
+  --black: #020303;
+  --darkBlue: #00214d;
+  --darkGrey: #222;
+  --grey: #cccccc;
+  --lightGrey: #f2f4f6;
+  --white: #fff;
+
+  /* Define Colors intentions */
+  --background: var(--white);
+  --textColor: var(--black);
+  --buttonTextColor: var(--black);
+  --lineColor: var(--grey);
+  --cardBg: var(--white);
+  --headerBackground: var(--background-color);
+  --footerBackground: var(--black);
+  --textLink: var(--green)
+
+  /* Styles */
+  --line: solid 1px var(--lineColor);
+
+  /* Spacing */
+  --space-xxs:  4px;
+  --space-xs:   8px;
+  --space-sm:   12px;
+  --space-md:   20px;
+  --space-lg:   32px;
+  --space-xl:   52px;
+  --space-xxl:  84px;
+
+  /* Typography */
+  --hometitle: 'Silkscreen', serif;
+  --homebody: 'Nova Mono', sans-serif;
+
+  --baseFontSize: clamp(0.875rem, 0.7885rem + 0.3846vw, 1.25rem);
+
+  --type-scale: 1.5;
+
+  --xlText: calc(var(--lgText) * var(--type-scale));
+  --lgText: calc(var(--mdText) * var(--type-scale));
+  --mdText: calc(var(--baseText) * var(--type-scale));
+  --xsText: calc(var(--smText) / var(--type-scale));
+  --smText: calc(var(--baseText) / var(--type-scale));
+  --baseText: var(--baseFontSize);
+
+
+  /* Positioning */
+  --containerPadding: 2.5%;
+  --headerHeight: 3rem;
+  --borderRadius: 10px;
+
+    /* Elevation */
+    --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --level-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --level-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+}
+
+main {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  header {
+    color: var(--accent-color);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: var(--headerHeight);
+    background: var(--headerBackground);
+    box-shadow: var(--level-2);
+    padding: 0 var(--containerPadding);
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 600px;
+  }
+  
+  header nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    padding:.5rem;
+  
+  }
+  
+  header nav a + a {
+    margin-left: 10px;
+  }
+
+  .content-block {
+    margin-top: var(--space-lg);
+  }
+  .hometitle {
+    font-family: "Silkscreen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 100px;
+    text-align: center;
+    }
+   .homebody {
+      font-family: "Nova Mono", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: regular;
+      font-size: 30px;
+      text-align: center;
+      }
+    .homecaption {
+      font-family: "Nova Mono", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: regular;
+      font-size: 18px;
+      text-align: center;
+      }
+     
+    .subtitle {
+      text-align: center;
+      }
+  footer {
+    --footerTextColor: var(--lightGrey);
+    color: var(--footerTextColor);
+    background: var(--footerBackground);
+    padding: 2rem var(--containerPadding);
+    text-align: center;
+  }
+  
+  footer a {
+    color: var(--footerTextColor);
+  }
+  
+  footer p {
+    margin-bottom: 0;
+    max-width: none;
+  }
+ /* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.grid-container {
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 30px;
+  gap: 30px;
+  
+  /* by default use min 200px wide columns auto-fit into width */
+  grid-template-columns: minmax(200px, 1fr);
+}
+
+/* grids to 3 columns above mobile sizes */
+
+  
+  /* basic grids */
+  .grid-container.col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .grid-container.col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .grid-container.col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-container.col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-container.col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-container.full {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+/* Flexbox */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Example flexbox usage */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.card {
+  padding: var(--space-2);
+  background-color: var(--gray-200);
+  border-radius: var(--space-2);
+}

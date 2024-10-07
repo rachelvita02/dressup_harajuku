@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Silkscreen:wght@400;700&display=swap&family=Dosis:wght@200..800&family=Send+Flowers&display=swap');
+
+/*typography*/
+.title-1 {
+    font-family: "Send Flowers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: regular;
+    text-align: center;
+    font-size: 100px;
+    color: var(--red);
+    }
+.header-1 {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    font-size: 30px;
+    color: var(--red);
+}
+.body-1 {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    color:black;
+    
+}
+.stars{
+    color:#EADB7E;
+    text-align: center;
+}
+
+/*grid*/
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .brand1 { grid-area: 1 / 1 / 2 / 2; }
+    .brand2 { grid-area: 2 / 2 / 3 / 3; }
+    .brand3 { grid-area: 1 / 3 / 2 / 4; }
+    .brand4 { grid-area: 2 / 4 / 3 / 5; }
+
+    .rating-grid {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 0px;
+        }
+        
+        .rating-body { grid-area: 1 / 3 / 3 / 7; }
+        .star-box { grid-area: 1 / 7 / 3 / 8; }
+
+
+/* colors */
+:root{
+--pink: #ffdfe5;
+--lightpink: #FFF0F3;
+--red: #C80000;
+--yellow: #EADB7E;
+
+/* color intentions */
+--background: var(--pink);
+--headertext: var(--red);
+--boxcolor: var(--lightpink);
+--starcolor: var(--yellow);
+--highlight: var(--lightpink);
+}
+
+  .highlight{
+    background: var(--highlight);
+    padding: 1rem;
+  }
