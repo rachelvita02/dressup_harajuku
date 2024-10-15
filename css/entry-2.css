@@ -63,6 +63,7 @@
         .star-box { grid-area: 1 / 7 / 3 / 8; }
        
         .highlight{
+            border-radius: 25px;
             background: var(--highlight);
             padding: 1rem;
           }

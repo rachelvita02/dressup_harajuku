@@ -75,6 +75,7 @@
 }
 
   .highlight{
+    border-radius: 25px;
     background: var(--highlight);
     padding: 1rem;
   }
