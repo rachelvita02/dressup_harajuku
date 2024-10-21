@@ -31,14 +31,35 @@
       background-color: #D9D9D9;
     }
   </style>
-  <header>
-    <nav>
-      <a href="../index.html" class="homecaption">Home</a>
-    </button>
-    </nav>
-   
-  </header>
   <main>
+    <body>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html" class="homecaption">home</a>
+        <a href="../entries/entry-1.html" class="homecaption">lolita</a>
+        <a href="../entries/entry-3.html" class="homebody">gyaru</a>
+        <a href="../entries/entry-2.html"class="homecaption">visual kei</a>
+        <a href="#" class="homecaption">bosozoku</a>
+        <a href="#" class="homecaption">decora</a>
+        <a href="#" class="homecaption">cyberpop</a>
+        <a href="#" class="homecaption">mori kei</a>
+        <a href="#" class="homecaption">fairy kei</a>
+        <a href="#" class="homecaption">mizurio</a>
+        <a href="#" class="homecaption">yami kawaii</a>
+      </div>
+      <div class="sidenav-menu" onclick="openNav()"><img src="../images/menu-icon.png"></div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+      </body>
+
      <section class="grid-container col-full">
       <h1 class="title">visual kei</h1>
      </section>
@@ -51,45 +72,95 @@
        </p>
       </article>
    <figure>
-    <img src="../images/vk-intro.webp" alt="art image" />
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="../vk-images/vk-intro.webp" style="width:100%">
+      </div>
+     <div class="mySlides fade">
+        <img src="../vk-images/vk-band2.jpg" style="width:100%">
+     </div>
+      <div class="mySlides fade">
+        <img src="../vk-images/Gazette-Fans-Shibuya-2012-11-29-006.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="../vk-images/Versailles-Visual-Kei-Fan-Fashion-2012-12-20-025.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="../vk-images/Visual-Kei-Fixer-Harajuku-20150411DSC2992.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="../vk-images/vk-band3.jpg" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
   </figure>
      </section>
       
    <section class="grid-container col-full">
     <h2 class="header">characteristics</h2>
    </section>
-     <section class="grid-container col-4">
-        <img src="../images/vk-1.jpg" alt="art image" />
-        <img src="../images/vk-2.webp" alt="art image" />
-        <img src="../images/vk-3.jpg" alt="art image" />
-        <img src="../images/vk-4.jpg" alt="art image" />
-    </section>
+   <section class="grid-container col-full">
+    <div class="scroll-container">
+      <img src="../vk-images/Fernopaa-Sex-Pot-Revenge-Harajuku-20150607DSC9145.jpg" class="img" >
+      <img src="../vk-images/Fernopaa-Sex-Pot-Revenge-Harajuku-20150607DSC9168.jpg" class="img">
+      <img src="../vk-images/vk-4.jpg" class="img-v">
+      <img src="../vk-images/Gothic-H-Naoto-Harajuku-Fashion-20141207DSC2990.jpg" class="img">
+      <img src="../vk-images/TK-2015-06-07-018-013-Harajuku.jpg" class="img">
+      <img src="../vk-images/vk-2.webp" class="img-v">
+    </div>
+</section>
     <section class="grid-container col-full">
       <h2 class="header">where to shop</h2>
       </section>
   <section class="grid-container col-4">
     <div class="brand1">
-      <a href="https://acdcrag.com/en" target="_blank"><img src="../images/acdc-logo.png" alt="art image" /></a>
+      <a href="https://acdcrag.com/en" target="_blank"><img src="../vk-images/acdc-logo.png" alt="art image" /></a>
       <h2 class="header">acdc rag</p>
     </div>
     <div class="brand3">
-      <a href="https://moi-meme-moitie.com/" target="_blank"><img src="../images/Moi-meme-Moitie_logo.webp" alt="art image" /></a>
+      <a href="https://moi-meme-moitie.com/" target="_blank"><img src="../vk-images/Moi-meme-Moitie_logo.webp" alt="art image" /></a>
       <h2 class="header">moi meme moitie</h2>
     </div>
   </section>
   <section class="grid-container col-4">
     <div class="brand2">
-      <a href="https://www.sexpot.jp/" target="_blank"><img src="../images/spr-logo.png" alt="art image" /></a>
+      <a href="https://www.sexpot.jp/" target="_blank"><img src="../vk-images/spr-logo.png" alt="art image" /></a>
       <h2 class="header">sex pot revenge</h2>
     </div>
     <div class="brand4">
-      <a href="https://www.hellcatpunks.com/" target="_blank"><img src="../images/hcp-logo.png" alt="art image" /></a>
+      <a href="https://www.hellcatpunks.com/" target="_blank"><img src="../vk-images/hcp-logo.png" alt="art image" /></a>
       <h2 class="header">hell cat punks</h2>
     </div>
   </section>
   <section class="grid-container col-full">
     <figure>
-      <img src="../images/visual-kei-magazine.png" alt="art image"/>
+      <img src="../vk-images/visual-kei-magazine.png" alt="art image"/>
     </figure>
   </section>
   <section class="grid-container col-full">
@@ -127,19 +198,14 @@
     <h2 class="header">create an outfit!</h2>
   </section>
   <section class="grid-container col-full">
-    <figure> 
-        <img src="../images/visual-kei-doll.png" />
-    </figure>
+    <div style="text-align: center;"> 
+        <img src="../vk-images/visual-kei-doll.png" />
+    </div>
   </section>
 </main>
-  <footer>
+  <footer class="footer">
     <h3 class="homebody">playing dress up in harajuku</h3>
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-    <p>&copy; 2024 Rachel Vita | Core 1 interaction</p>
+    <p class="homecaption">&copy; 2024 Rachel Vita | Core 1 interaction</p>
   </footer>
   <script src="../js/functions.js"></script>
 </body>

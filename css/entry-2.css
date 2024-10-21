@@ -27,12 +27,18 @@
     font-size: 16px;
     
 }
+
+.stars{
+    color:#EADB7E;
+    text-align: center;
+}
 /* colors */
 :root{
 --white:#fff;
+--yellow: #EADB7E;
 
---highlight:var(--white)
-
+--highlight:var(--white);
+--stars: var(--yellow);
 
 }
 

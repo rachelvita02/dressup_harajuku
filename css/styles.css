@@ -130,7 +130,7 @@ main {
       font-optical-sizing: auto;
       font-weight: 400;
       font-style: regular;
-      font-size: 18px;
+      font-size: 14px;
       text-align: center;
       }
      
@@ -138,10 +138,8 @@ main {
       text-align: center;
       }
   footer {
-    --footerTextColor: var(--lightGrey);
-    color: var(--footerTextColor);
-    background: var(--footerBackground);
-    padding: 2rem var(--containerPadding);
+    background: var(--white);
+    padding: 4rem var(--containerPadding);
     text-align: center;
   }
   
@@ -153,7 +151,77 @@ main {
     margin-bottom: 0;
     max-width: none;
   }
- /* Grid
+
+  .align-img{
+    text-align: center;
+  }
+ 
+  /* wavy text 
+  __________________________________________*/
+  .text {
+    margin-top: 5rem;
+ }
+ .text span {
+    display: inline-block;
+    animation: wave-text 1.4s ease-in-out infinite;
+ }
+ .text span:nth-child(1) {
+    animation-delay: 0.0s;
+ }
+ .text span:nth-child(2) {
+    animation-delay: 0.1s;
+ }
+ .text span:nth-child(3) {
+    animation-delay: 0.2s;
+ }
+ .text span:nth-child(4) {
+    animation-delay: 0.3s;
+ }
+ .text span:nth-child(5) {
+    animation-delay: 0.4s;
+ }
+ .text span:nth-child(6) {
+    animation-delay: 0.5s;
+ }
+ .text span:nth-child(7) {
+    animation-delay: 0.6s;
+ }
+ .text span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.text span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.text span:nth-child(10) {
+  animation-delay: 1s;
+}
+.text span:nth-child(11) {
+  animation-delay: 1.1s;
+}
+.text span:nth-child(12) {
+  animation-delay: 1.2s;
+}
+.text span:nth-child(13) {
+  animation-delay: 1.3s;
+}
+.text span:nth-child(14) {
+  animation-delay: 1.4s;
+}
+ @keyframes wave-text {
+    0% {
+       transform: translateY(0rem);
+    }
+    55% {
+       transform: translateY(-1.5rem);
+    }
+    100% {
+       transform: translateY(0rem);
+    }
+ }
+
+
+ 
+  /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .grid-container {
   position: relative;
@@ -229,7 +297,9 @@ main {
   border-radius: var(--space-2);
 }
 
-/* The side navigation menu */
+
+/* The side navigation menu 
+____________________________________________*/
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -251,6 +321,10 @@ main {
   color: #000000;
   display: block;
   transition: 0.3s;
+}
+
+.sidenav-menu{
+  padding: 2rem;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -277,4 +351,113 @@ main {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+/* hover animation 
+___________________________________________*/
+
+.zoom-img {
+  height:auto;
+  overflow: visible;
+}
+
+.zoom-img  img {
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.zoom-img img:hover   {
+  transform: scale(1.2);
+}
+
+/* slideshow 
+_____________________________________________*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* characteristics gallery 
+____________________________________*/
+div.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+.img{
+  max-width: 50%;
+  height: auto;
+}
+
+.img-v{
+  max-width: 25%;
+  height: auto;
 }
