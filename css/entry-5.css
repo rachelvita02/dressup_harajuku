@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Palette+Mosaic&display=swap');
+
+/*typography*/
+.title {
+    font-family: "Palette Mosaic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: regular;
+    text-align: center;
+    font-size: 100px;
+    color: var(--red);
+    }
+.header {
+    font-family: "Alike Angular", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: regular;
+    text-align: left;
+    font-size: 30px;
+    color: var(--red);
+}
+.body {
+    font-family: "Alike Angular", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    font-size: 16px;
+    color: var(--dark-blue);
+}
+
+.stars{
+    color:var(--red);
+    text-align: center;
+}
+/* colors */
+:root{
+--white:#fff;
+--dark-blue: #253054;
+--red: #CC2727;
+--other-yellow: #F4E99A;
+--yellow: #EADB7E;
+
+--highlight:var(--other-yellow);
+--stars: var(--white);
+
+}
+
+
+/*grid*/
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .brand1 { grid-area: 1 / 1 / 2 / 2; }
+    .brand2 { grid-area: 2 / 2 / 3 / 3; }
+    .brand3 { grid-area: 1 / 3 / 2 / 4; }
+    .brand4 { grid-area: 2 / 4 / 3 / 5; }
+
+    .rating-grid {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 0px;
+        }
+        
+        .rating-body { grid-area: 1 / 3 / 3 / 7; }
+        .star-box { grid-area: 1 / 7 / 3 / 8; }
+       
+        .highlight{
+            border-radius: 25px;
+            background: var(--highlight);
+            padding: 1rem;
+          }
+
+          .music-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            }
+            
+            .music1 { grid-area: 1 / 2 / 2 / 4; }
+            .music2 { grid-area: 1 / 4 / 2 / 6; }
+            .music3 { grid-area: 2 / 2 / 3 / 4; }
+            .music4 { grid-area: 2 / 4 / 3 / 6; }

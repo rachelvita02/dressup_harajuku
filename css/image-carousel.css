@@ -1,0 +1,12 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+  
+.draggable {
+  width: auto; /* Set a default size for the images */
+  height: auto;
+  cursor: grab;
+  position: absolute;
+  transition: transform 0.1s;
+}

@@ -39,33 +39,19 @@
         <a href="../entries/entry-1.html" class="homecaption">lolita</a>
         <a href="../entries/entry-3.html" class="homebody">gyaru</a>
         <a href="../entries/entry-2.html"class="homecaption">visual kei</a>
-        <a href="#" class="homecaption">bosozoku</a>
-        <a href="#" class="homecaption">decora</a>
+        <a href="../entries/entry-5.html" class="homecaption">bosozoku</a>
+        <a href="../entries/entry-4.html" class="homecaption">decora</a>
         <a href="#" class="homecaption">cyberpop</a>
         <a href="#" class="homecaption">mori kei</a>
         <a href="#" class="homecaption">fairy kei</a>
         <a href="#" class="homecaption">mizurio</a>
         <a href="#" class="homecaption">yami kawaii</a>
       </div>
-      <div class="sidenav-menu" onclick="openNav()"><img src="../images/menu-icon.png"></div>
-      
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-      </script>
+      <div class="sidenav-menu" onclick="openNav()"><img src="../images/menu.png"></div>
       </body>
 
-     <section class="grid-container col-full">
       <h1 class="title">visual kei</h1>
-     </section>
-     <section class="grid-container col-full">
       <h2 class="header">what's visual kei?</h2>
-     </section>
      <section class="grid-container col-2">
       <article class="highlight">
         <p class="body"> Visual Kei is a Japanese fashion movement closely tied to a music genre of the same name, which emerged in the late 1980s. It is characterized by its bold, androgynous style, dramatic makeup, and elaborate hairstyles, often incorporating punk, gothic, and glam rock influences. Outfits in Visual Kei range from dark and gothic to flamboyant and colorful, with a heavy emphasis on individuality and self-expression. Generally, visual kei features darker color schemes, such as blacks, greys, and dark reds, blue, and purples. However, some looks, especially more feminine looks, can have lighter color schemes as well. Neons and loud colors and patterns are also used, but more monochrome is what the style is most known for. Plaids, lace, crosses, skulls, and ripped fabrics are typical patterns and textures included in visual kei clothes.   Accessories like spikes, chains, and platform boots are common, and the look often blurs gender lines, allowing for a fluid and theatrical presentation of identity. 
@@ -94,78 +80,44 @@
       <a class="prev" onclick="plusSlides(-1)">❮</a>
       <a class="next" onclick="plusSlides(1)">❯</a>
       </div>
-      <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-      </script>
   </figure>
      </section>
-      
-   <section class="grid-container col-full">
     <h2 class="header">characteristics</h2>
-   </section>
    <section class="grid-container col-full">
     <div class="scroll-container">
       <img src="../vk-images/Fernopaa-Sex-Pot-Revenge-Harajuku-20150607DSC9145.jpg" class="img" >
-      <img src="../vk-images/Fernopaa-Sex-Pot-Revenge-Harajuku-20150607DSC9168.jpg" class="img">
       <img src="../vk-images/vk-4.jpg" class="img-v">
+      <img src="../vk-images/Fernopaa-Sex-Pot-Revenge-Harajuku-20150607DSC9168.jpg" class="img">
       <img src="../vk-images/Gothic-H-Naoto-Harajuku-Fashion-20141207DSC2990.jpg" class="img">
       <img src="../vk-images/TK-2015-06-07-018-013-Harajuku.jpg" class="img">
       <img src="../vk-images/vk-2.webp" class="img-v">
     </div>
 </section>
-    <section class="grid-container col-full">
       <h2 class="header">where to shop</h2>
-      </section>
-  <section class="grid-container col-4">
-    <div class="brand1">
+  <section class="brand-grid">
+    <figure class="brand1">
       <a href="https://acdcrag.com/en" target="_blank"><img src="../vk-images/acdc-logo.png" alt="art image" /></a>
-      <h2 class="header">acdc rag</p>
-    </div>
-    <div class="brand3">
+      <figcaption class="header">acdc rag</figcaption>
+      </figure>
+    <figure class="brand3">
       <a href="https://moi-meme-moitie.com/" target="_blank"><img src="../vk-images/Moi-meme-Moitie_logo.webp" alt="art image" /></a>
-      <h2 class="header">moi meme moitie</h2>
-    </div>
-  </section>
-  <section class="grid-container col-4">
-    <div class="brand2">
+      <figcaption class="header">moi meme moitie</figcaption>
+    </figure>
+    <figure class="brand2">
       <a href="https://www.sexpot.jp/" target="_blank"><img src="../vk-images/spr-logo.png" alt="art image" /></a>
-      <h2 class="header">sex pot revenge</h2>
-    </div>
-    <div class="brand4">
+      <figcaption class="header">sex pot revenge</figcaption>
+    </figure>
+    <figure class="brand4">
       <a href="https://www.hellcatpunks.com/" target="_blank"><img src="../vk-images/hcp-logo.png" alt="art image" /></a>
-      <h2 class="header">hell cat punks</h2>
-    </div>
+      <figcaption class="header">hell cat punks</figcaption>
+    </figure>
   </section>
   <section class="grid-container col-full">
     <figure>
       <img src="../vk-images/visual-kei-magazine.png" alt="art image"/>
     </figure>
   </section>
-  <section class="grid-container col-full">
-    <h2 class="header">music scene</h2>
-  </section>
+  <h2 class="header">music scene</h2>
   <section class="grid-container col-2">
     <figure>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/uwnbOf84gL8?si=xQdf3alp8gv954Ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
@@ -181,7 +133,7 @@
       </p>
   </article>
   </section>
-  <section class="grid-container col-full"> <h2 class="header">rachel's rating</h2></section>
+  <h2 class="header">rachel's rating</h2>
   <section class="rating-grid">
     <article class="highlight rating-body" >
     <p class="body">Lorem ipsum odor amet, consectetuer adipiscing elit. Mus vehicula mauris sagittis commodo erat vulputate. Faucibus cubilia venenatis rhoncus magna purus sem purus. Pellentesque congue nisl purus semper, ullamcorper gravida senectus conubia. Class non fringilla consequat vulputate per ex blandit habitant. Justo turpis pellentesque luctus ex amet nascetur duis vitae habitasse. Eros proin platea placerat libero tristique ligula et. Sed facilisi natoque risus nullam curabitur tristique ligula. Iaculis placerat malesuada nisi tellus mauris litora aenean? </p>
@@ -194,9 +146,7 @@
     <h1 class="stars">&starf;</h1>
     </article>  
   </section>
-  <section class="grid-container col-full">
     <h2 class="header">create an outfit!</h2>
-  </section>
   <section class="grid-container col-full">
     <div style="text-align: center;"> 
         <img src="../vk-images/visual-kei-doll.png" />
@@ -208,5 +158,6 @@
     <p class="homecaption">&copy; 2024 Rachel Vita | Core 1 interaction</p>
   </footer>
   <script src="../js/functions.js"></script>
+  <script src="../js/ic.js"></script>
 </body>
 </html>

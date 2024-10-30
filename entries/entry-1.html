@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/entry-1.css">
+  <link rel="stylesheet" href="../css/image-carousel.css">
 
 
   <!-- Favicon
@@ -31,7 +32,7 @@
       background-color: #ffdfe5;
     }
   </style>
-</body>
+
   <main>
     <body>
       <div id="mySidenav" class="sidenav">
@@ -40,30 +41,18 @@
         <a href="../entries/entry-1.html" class="homecaption">lolita</a>
         <a href="../entries/entry-3.html" class="homebody">gyaru</a>
         <a href="../entries/entry-2.html"class="homecaption">visual kei</a>
-        <a href="#" class="homecaption">bosozoku</a>
-        <a href="#" class="homecaption">decora</a>
+        <a href="../entries/entry-5.html" class="homecaption">bosozoku</a>
+        <a href="../entries/entry-4.html" class="homecaption">decora</a>
         <a href="#" class="homecaption">cyberpop</a>
         <a href="#" class="homecaption">mori kei</a>
         <a href="#" class="homecaption">fairy kei</a>
         <a href="#" class="homecaption">mizurio</a>
         <a href="#" class="homecaption">yami kawaii</a>
       </div>
-      <div class="sidenav-menu" onclick="openNav()"><img src="../images/menu-icon.png"></div>
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-      </script>
+      <div class="sidenav-menu" onclick="openNav()"><img src="../images/menu.png"></div>
       </body>
-     <section class="grid-container col-full">
       <h1 class="title-1">lolita</h1>
-     </section>
-     <section class="grid-container col-full">
       <h2 class="header-1">what's lolita?</h2>
-     </section>
      <section class="grid-container col-2">
       <article class="highlight">
       <p class="body-1"> In the 90s, a new fashion style swept through Harajuku, the hub for Tokyo's alternative fashion scene, which soon became a cultural movement in the growing fashion community. Lolita fashion is one of the many styles in the Harajuku fashion scene, and there are numerous subgenres within Lolita fashion itself. The style is best described as the epitome of girlhood and femininity. Those who wear Lolita clothing can be seen walking around in the city like vintage dolls come to life, sticking out from the rest of the crowd. Cupcake-like dresses full of pastel pinks, blues, and purples with ruffles, bows, and lace are displayed in numerous shops in Harajuku.</p>
@@ -91,49 +80,21 @@
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
-        <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
      </section>
       
-   <section class="grid-container col-full">
+
     <h2 class="header-1">characteristics</h2>
-   </section>
     <section class="grid-container col-full">
       <div class="scroll-container">
         <img src="../lolita-images/RinRin-Doll-Angelic-Pretty-Harajuku-20170325D509116.jpg" class="img" >
-        <img src="../lolita-images/NK-2019-07-20-010-008-Harajuku-DZ7-7335-2.jpg" class="img">
         <img src="../lolita-images/GothicAndLolita_117.jpg" class="img-v">
+        <img src="../lolita-images/NK-2019-07-20-010-008-Harajuku-DZ7-7335-2.jpg" class="img">
         <img src="../lolita-images/Angelic-Pretty-Harajuku-Fashion-20190427DZ76489.jpg" class="img">
         <img src="../lolita-images/Gothic-Lolita-Fashion-Harajuku-20170319D508356.jpg" class="img">
         <img src="../lolita-images/GothicAndLolita_139.jpg" class="img-v">
       </div>
-  </section>
-    <section class="grid-container col-full">
+    </section>
       <h2 class="header-1">where to shop</h2>
-      </section>
   <section class="brand-grid">
     <figure class="brand1">
       <a href="https://www.angelicpretty-usa.com/shopping/" target="_blank"><img src="../lolita-images/ap-logo.png" alt="art image" /></a>
@@ -144,7 +105,7 @@
       <figcaption class="body-1">baby the stars shine bright</figcaption>
     </figure>
     <figure class="brand2">
-      <a href=https://www.bodylinetokyo.co.jp/products/list.php?category_id=881&lang=en target="_blank"><img src="../lolita-images/body-logo.png" alt="art image" /></a>
+      <a href="https://www.bodylinetokyo.co.jp/products/list.php?category_id=881&lang=en" target="_blank"><img src="../lolita-images/body-logo.png" alt="art image" /></a>
       <figcaption class="body-1">bodyline</figcaption>
     </figure>
     <figure class="brand4">
@@ -170,7 +131,7 @@
     <p class="body-1">Entering these stores felt like stepping into a new dimension my five-year-old self could only dream of. I remember taking my time and looking through every dress, blouse, hair clip, purse, and pair of socks and shoes, studying all the intricate details in each piece. I was simply in awe of how everything was so beautiful and well-crafted. I would've stuffed my suitcase full if it weren't for the mindblowing price tags, with dresses for over $300 and blouses for over $150. Instead, I bought a pair of pink lace bow clips, sheer white knee-high socks, and pink and white lace wrist cuffs. All of these pieces are some of my most prized fashion items.</p>
     </article>
   </section>
-  <section class="grid-container col-full"> <h2 class="header-1">rachel's rating</h2></section>
+  <h2 class="header-1">rachel's rating</h2>
   <section class="rating-grid">
     <article class="highlight rating-body" >
      <p class="body-1">I've been fascinated by Harajuku fashion, specifically lolita fashion, for several years. The pastel colors, puffed sleeves, poofy skirts, and piles of ribbon and lace were my perfect eye candy. Like many Lolita fans, I felt so drawn to the style because it was unapologetically nostalgic and it takes me back to a simpler, carefree time in my life. </p>
@@ -184,9 +145,7 @@
       <h1 class="stars">&starf;</h1>
     </article>  
   </section>
-  <section class="grid-container col-full">
     <h2 class="header-1">create an outfit</h2>
-  </section>
   <section class="grid-container col-full">
     <div style="text-align: center;">
       <img src="../lolita-images/lolita-doll.png" alt="art image" />
@@ -198,5 +157,8 @@
     <p class="homecaption">&copy; 2024 Rachel Vita | Core 1 interaction</p>
   </footer>
   <script src="../js/functions.js"></script>
+  <script src="../js/ic.js"></script>
+  <script src="../js/heart-sparkles.js"></script>
+
 </body>
 </html>
