@@ -7,7 +7,7 @@
     font-weight: 400;
     font-style: regular;
     text-align: center;
-    font-size: 100px;
+    font-size: 5.61rem;
     color: var(--pink);
     }
 .header {
@@ -16,7 +16,7 @@
     font-weight: 400;
     font-style: regular;
     text-align: left;
-    font-size: 30px;
+    font-size:  2.369rem;
     color: var(--pink);
 }
 .body {
@@ -25,7 +25,7 @@
     font-weight: 400;
     font-style: regular;
     text-align: left;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--pink);
 }
 

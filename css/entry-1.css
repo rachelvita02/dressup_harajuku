@@ -7,7 +7,7 @@
     font-weight: 400;
     font-style: regular;
     text-align: center;
-    font-size: 100px;
+    font-size: 5.61rem;
     color: var(--red);
     }
 .header-1 {
@@ -16,7 +16,7 @@
     font-weight: 400;
     font-style: regular;
     text-align: left;
-    font-size: 30px;
+    font-size: 2.369rem;
     color: var(--red);
 }
 .body-1 {
@@ -24,6 +24,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: regular;
+    font-size: 1rem;
     text-align: left;
     color:black;
     align-self: center; 
@@ -34,7 +35,7 @@
 }
 
 /*grid*/
-    .rating-grid {
+    /*.rating-grid {
         display: grid;
         grid-template-columns: repeat(9, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -43,7 +44,7 @@
         }
         
         .rating-body { grid-area: 1 / 3 / 3 / 7; }
-        .star-box { grid-area: 1 / 7 / 3 / 8; }
+        .star-box { grid-area: 1 / 7 / 3 / 8; }*/
 
 
 /* colors */

@@ -281,6 +281,18 @@ main {
       .music2 { grid-area: 1 / 4 / 2 / 6; }
       .music3 { grid-area: 2 / 2 / 3 / 4; }
       .music4 { grid-area: 2 / 4 / 3 / 6; }
+
+      .rating-grid {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 0px;
+        }
+        
+        .rating-body { grid-area: 1 / 3 / 3 / 7; }
+        .star-box { grid-area: 1 / 7 / 3 / 8; }
+
   }
 
 
