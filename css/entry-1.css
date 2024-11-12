@@ -34,19 +34,6 @@
 }
 
 /*grid*/
-.brand-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .brand1 { grid-area: 1 / 1 / 2 / 2; }
-    .brand2 { grid-area: 2 / 2 / 3 / 3; }
-    .brand3 { grid-area: 1 / 3 / 2 / 4; }
-    .brand4 { grid-area: 2 / 4 / 3 / 5; }
-
     .rating-grid {
         display: grid;
         grid-template-columns: repeat(9, 1fr);
@@ -80,76 +67,9 @@
     padding: 1rem;
   }
 
-  /* slideshow 
-_____________________________________________*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .carousel-container {
-    position: relative;
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-    height: 50vw;
-    max-height: 400px;
-  }
-  
-  .carousel-slide {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .carousel-image {
+ .crop{
+    height: 100%;
     width: 100%;
+    aspect-ratio: 3/2;
     object-fit: cover;
-    height: auto;
-  }
-  
-  button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  button.prev {
-    left: 0;
-  }
-  
-  button.next {
-    right: 0;
-  }
-  
-  button.prev:hover, button.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  /* Media Queries for different screen sizes */
-  @media (max-width: 768px) {
-    .carousel-container {
-        width: 95%; /* Slightly smaller width on tablets */
-        height: 60vw; /* Adjust height based on viewport width */
-    }
-  
-    button.prev, button.next {
-        padding: 8px; /* Smaller buttons on tablets */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .carousel-container {
-        width: 100%; /* Full width on mobile */
-        height: 70vw; /* Adjust height based on viewport width */
-    }
-  
-    button.prev, button.next {
-        padding: 6px; /* Smaller buttons on mobile */
-    }
-  }
+}

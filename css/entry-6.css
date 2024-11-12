@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inconsolata:wght@200..900&display=swap');
+
+/*typography*/
+.title {
+    font-family: "Bagel Fat One", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: regular;
+    text-align: center;
+    font-size: 100px;
+    color: var(--light-pink);
+    }
+.header {
+    font-family: "Inconsolata", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: regular;
+    text-align: left;
+    font-size: 30px;
+    color: var(--light-pink);
+}
+.body {
+    font-family: "Inconsolata", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    font-size: 16px;
+    color: var(black);
+}
+
+.stars{
+    color:var(--yellow);
+    text-align: center;
+}
+/* colors */
+:root{
+--white:#fff;
+--light-pink: #FEEAEC;
+--purp: #D2AFE5;
+--highlight: #FFFDF6;
+--yellow: #EADB7E;
+
+--highlight:var(--highlight);
+--stars: var(--yellow);
+
+}
+
+
+/*grid*/
+    .rating-grid {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 0px;
+        }
+        
+        .rating-body { grid-area: 1 / 3 / 3 / 7; }
+        .star-box { grid-area: 1 / 7 / 3 / 8; }
+       
+        .highlight{
+            border-radius: 25px;
+            background: #FFFDF6;
+            padding: 1rem;
+          }
+
+          .music-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            }
+            
+            .music1 { grid-area: 1 / 2 / 2 / 4; }
+            .music2 { grid-area: 1 / 4 / 2 / 6; }
+            .music3 { grid-area: 2 / 2 / 3 / 4; }
+            .music4 { grid-area: 2 / 4 / 3 / 6; }
+/*img crop*/
+.crop{
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}

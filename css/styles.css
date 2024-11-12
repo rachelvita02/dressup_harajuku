@@ -229,16 +229,17 @@ main {
   margin: 0 auto;
   display: grid;
   grid-gap: 30px;
-  gap: 30px;
+  gap: 15px;
   padding: 1rem;
   
   /* by default use min 200px wide columns auto-fit into width */
   grid-template-columns: minmax(200px, 1fr);
 }
-
-/* grids to 3 columns above mobile sizes */
-
-  
+@media (min-width: 900px) {
+	.grid-container {
+		grid-template-columns: 1fr;
+		padding: 5px 0;
+	}
   /* basic grids */
   .grid-container.col-6 {
     grid-template-columns: repeat(6, 1fr);
@@ -255,48 +256,32 @@ main {
   .grid-container.col-2 {
     grid-template-columns: 1fr 1fr;
   }
-  .grid-container.full {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+  .brand-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .brand1 { grid-area: 1 / 1 / 2 / 2; }
+    .brand2 { grid-area: 2 / 2 / 3 / 3; }
+    .brand3 { grid-area: 1 / 3 / 2 / 4; }
+    .brand4 { grid-area: 2 / 4 / 3 / 5; }
+
+    .music-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      }
+      
+      .music1 { grid-area: 1 / 2 / 2 / 4; }
+      .music2 { grid-area: 1 / 4 / 2 / 6; }
+      .music3 { grid-area: 2 / 2 / 3 / 4; }
+      .music4 { grid-area: 2 / 4 / 3 / 6; }
   }
-
-/* Flexbox */
-.flex {
-  display: flex;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-/* Example flexbox usage */
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3);
-}
-
-.card {
-  padding: var(--space-2);
-  background-color: var(--gray-200);
-  border-radius: var(--space-2);
-}
 
 
 /* The side navigation menu 
@@ -461,4 +446,19 @@ div.scroll-container img {
 .img-v{
   max-width: 25%;
   height: auto;
+}
+
+/* reponsive video */
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }

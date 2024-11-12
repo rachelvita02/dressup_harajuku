@@ -6,7 +6,14 @@ body{
 .draggable {
   width: auto; /* Set a default size for the images */
   height: auto;
-  cursor: grab;
+  cursor: pointer;
+  position: fixed;
+}
+
+.container{
+  background-color: black;
+  background-size: 100px, 100px;
+  border-radius: 25px;
+  padding: 1rem;
   position: absolute;
-  transition: transform 0.1s;
 }

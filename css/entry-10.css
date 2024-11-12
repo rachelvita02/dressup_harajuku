@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Sono:wght@200..800&display=swap');
+
+/*typography*/
+.title {
+    font-family: "DotGothic16", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: regular;
+    text-align: center;
+    font-size: 100px;
+    color: var(--pink);
+    }
+.header {
+    font-family: "Sono", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: regular;
+    text-align: left;
+    font-size: 30px;
+    color: var(--pink);
+}
+.body {
+    font-family: "Sono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    font-size: 16px;
+    color: var(--pink);
+}
+
+.stars{
+    color:var(--yellow);
+    text-align: center;
+}
+/* colors */
+:root{
+--white:#CBC9CC;
+--pink: #FF7BD1;
+--eggplant: #3E3F5F;
+--purp: #F3DBFE;
+--yellow: #EADB7E;
+
+--highlight:var(--blue);
+--stars: var(--yellow);
+
+}
+
+
+/*grid*/
+    .rating-grid {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 0px;
+        }
+        
+        .rating-body { grid-area: 1 / 3 / 3 / 7; }
+        .star-box { grid-area: 1 / 7 / 3 / 8; }
+       
+        .highlight{
+            border-radius: 25px;
+            background:var(--eggplant);
+            padding: 1rem;
+          }
+/*img crop*/
+.crop{
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
