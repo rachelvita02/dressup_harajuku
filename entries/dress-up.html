@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/dress-up.css" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>dress up game</title>
+  </head>
+  <body>
+    <main>
+      <body>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="../index.html" class="homecaption">home</a>
+            <a href="../entries/entry-1.html" class="homecaption">lolita</a>
+            <a href="../entries/entry-3.html" class="homebody">gyaru</a>
+            <a href="../entries/entry-2.html"class="homecaption">visual kei</a>
+            <a href="../entries/entry-5.html" class="homecaption">bosozoku</a>
+            <a href="../entries/entry-4.html" class="homecaption">decora</a>
+            <a href="../entries/entry-8.html" class="homecaption">cyberpop</a>
+            <a href="../entries/entry-7.html" class="homecaption">mori kei</a>
+            <a href="../entries/entry-6.html" class="homecaption">fairy kei</a>
+            <a href="../entries/entry-9.html" class="homecaption">gothic lolita</a>
+            <a href="../entries/entry-10.html" class="homecaption">yami kawaii</a>
+            <a href="../entries/dress-up.html" class="homecaption">dress up game!</a>
+        </div>
+        <div class="sidenav-menu" onclick="openNav()"><img src="../images/menu-black.png"></div>
+        </body>
+      <h1 class="title">let's play dress up!</h1>
+        <figure class="backdrop">
+          <div id="acc"></div>
+          <div id="socks"></div>
+          <div id="bottom"></div>
+          <div id="girl"></div>
+          <div id="shoes"></div>
+          <div id="shirt"></div>
+          <div id="dress"></div>
+        </figure>
+      <figure class="box">
+        <div class="buttonBox">
+          <button id="nextshirt" onclick="nextshirt()">shirt</button>
+          <button id="nextbottom" onclick="nextbottom()">bottoms</button>
+         <button id="nextdress" onclick="nextdress()">dress</button>
+         <button id="nextshoes" onclick="nextshoes()">shoes</button>
+         <button id="nextsocks" onclick="nextsocks()">socks</button>
+          <button id="nextacc" onclick="nextacc()">accessory</button>
+        </div>
+      </figure>
+    </main>
+    <script src="../js/dress-up.js"></script>
+    <script src="../js/functions.js"></script>
+  </body>
+</html>

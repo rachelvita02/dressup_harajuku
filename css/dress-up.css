@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Silkscreen:wght@400;700&display=swap&family=Dosis:wght@200..800&family=Send+Flowers&display=swap');
+
+/* typography */
+.title {
+  color: black;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 4.209rem;
+  text-align: center;
+  font-family: "Silkscreen","sans serif";
+}
+
+
+/* layout */
+body {
+  background-color: white;
+}
+.backdrop {
+  top: auto;
+  margin: auto;
+  margin-bottom: 1em;
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  height: 700px;
+  width: 400px;
+}
+.box {
+  background-color: lightgrey;
+  border-radius: 20px;
+  margin: auto;
+  text-align: center;
+  width: 600px;
+  padding: 1rem;
+}
+.buttonBox {
+  position: relative;
+}
+button {
+  font-family: "Nova Mono","monospaced";
+  text-align: center;
+  color: black;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px 12px;
+  font-size: 1rem;
+  transition: 0.1s linear;
+}
+
+
+
+
+
+
+/* dress up stuff ____________________________*/ 
+#girl {
+  background-image: url("../dress-up-images/body.png");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 1;
+}
+#shirt {
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 6;
+}
+#shoes {
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 3;
+}
+#bottom {
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 5;
+}
+#socks {
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 2;
+}
+#acc {
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 4;
+}
+#dress {
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 6;
+}
+
+/* shirt _________________________*/
+.shirt1 {
+  background-image: url("../dress-up-images/shirt-1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 6;
+}
+
+.shirt2 {
+  background-image: url("../dress-up-images/shirt-2.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 6;
+}
+.shirt3 {
+  background-image: url("../dress-up-images/shirt-3.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 6;
+}
+.shirt4 {
+  background-image: url("../dress-up-images/shirt-4.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 6;
+}
+.shirt5 {
+  background-image: url("../dress-up-images/shirt-5.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 6;
+}
+.shirt6 {
+  background-image: url("../dress-up-images/shirt-6.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 6;
+}
+.shirt7 {
+  background-image: url("../dress-up-images/shirt-7.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 6;
+}
+.shirt8 {
+  background-image: url("../dress-up-images/shirt-8.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 6;
+}
+.shirt9 {
+  background-image: url("../dress-up-images/shirt-9.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 6;
+}
+
+/* bottoms */
+.bottom1 {
+  background-image: url("../dress-up-images/bottom-1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 5;
+}
+.bottom2 {
+  background-image: url("../dress-up-images/bottom-2.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 5;
+}
+.bottom3 {
+  background-image: url("../dress-up-images/bottom-3.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 5;
+}
+.bottom4 {
+  background-image: url("../dress-up-images/bottom-4.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 5;
+}
+.bottom5 {
+  background-image: url("../dress-up-images/bottom-5.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 5;
+}
+.bottom6 {
+  background-image: url("../dress-up-images/bottom-6.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 5;
+}
+
+/* shoes */
+.shoes1 {
+  background-image: url("../dress-up-images/shoes-1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 3;
+}
+.shoes2 {
+  background-image: url("../dress-up-images/shoes-2.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 3;
+}
+.shoes3 {
+  background-image: url("../dress-up-images/shoes-3.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 3;
+}
+.shoes4 {
+  background-image: url("../dress-up-images/shoes-4.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 3;
+}
+.shoes5 {
+  background-image: url("../dress-up-images/shoes-5.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 3;
+}
+.shoes6 {
+  background-image: url("../dress-up-images/shoes-6.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 3;
+}
+.shoes7 {
+  background-image: url("../dress-up-images/shoes-7.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 3;
+}
+.shoes8 {
+  background-image: url("../dress-up-images/shoes-8.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 3;
+}
+
+/* socks */
+.socks1 {
+  background-image: url("../dress-up-images/socks-1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 2;
+}
+.socks2 {
+  background-image: url("../dress-up-images/socks-2.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 2;
+}
+.socks3 {
+  background-image: url("../dress-up-images/socks-3.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 2;
+}
+.socks4 {
+  background-image: url("../dress-up-images/socks-4.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 2;
+}
+.socks5 {
+  background-image: url("../dress-up-images/socks-5.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 2;
+}
+
+/* accessories */
+.acc1 {
+  background-image: url("../dress-up-images/acc-1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 4;
+}
+.acc2 {
+  background-image: url("../dress-up-images/acc-2.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 4;
+}
+.acc3 {
+  background-image: url("../dress-up-images/acc-3.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 4;
+}
+
+/* dress */
+.dress1 {
+  background-image: url("../dress-up-images/dress-1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 6;
+}
+
+.dress2 {
+  background-image: url("../dress-up-images/dress-2.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 400px;
+  z-index: 6;
+}

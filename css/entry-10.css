@@ -29,6 +29,16 @@
     color: var(--pink);
 }
 
+.caption {
+    font-family: "Sono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    font-size: 1rem;
+    color: var(--eggplant);
+}
+
 .stars{
     color:var(--yellow);
     text-align: center;
