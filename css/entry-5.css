@@ -65,18 +65,6 @@
             padding: 1rem;
           }
 
-          .music-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 5px;
-            grid-row-gap: 5px;
-            }
-            
-            .music1 { grid-area: 1 / 2 / 2 / 4; }
-            .music2 { grid-area: 1 / 4 / 2 / 6; }
-            .music3 { grid-area: 2 / 2 / 3 / 4; }
-            .music4 { grid-area: 2 / 4 / 3 / 6; }
 /*img crop*/
 .crop{
     height: 100%;
