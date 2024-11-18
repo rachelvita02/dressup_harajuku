@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="create your own harajuku outfit in this fun game!">
+    <link rel="icon" type="image/png" href="../images/main-icon.png">
     <link rel="stylesheet" href="../css/dress-up.css" />
     <link rel="stylesheet" href="../css/styles.css">
     <title>dress up game</title>
@@ -29,7 +30,7 @@
         <div class="sidenav-menu" onclick="openNav()"><img src="../images/menu-black.png"></div>
         </body>
       <h1 class="title">let's play dress up!</h1>
-      <section class="grid-container full">
+      <section class="grid-container col-2">
         <figure class="backdrop">
           <div id="acc"></div>
           <div id="socks"></div>
@@ -39,8 +40,6 @@
           <div id="shirt"></div>
           <div id="dress"></div>
         </figure>
-      </section>
-      <section class="grid-container full">
         <article class="highlight">
           <p class="body">click to change each item!</p>
             <button id="nextshirt" onclick="nextshirt()">shirt</button>
@@ -50,7 +49,8 @@
             <button id="nextsocks" onclick="nextsocks()">socks</button>
             <button id="nextacc" onclick="nextacc()">accessory</button>
         </article>
-    </section>
+      </section>
+        
     </main>
     <script src="../js/dress-up.js"></script>
     <script src="../js/functions.js"></script>
