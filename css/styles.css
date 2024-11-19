@@ -399,6 +399,7 @@ _____________________________________________*/
   margin-top: -22px;
   padding: 16px;
   color: white;
+  text-shadow: 2px 2px 4px black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
