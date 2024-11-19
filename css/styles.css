@@ -21,15 +21,6 @@
   /* Styles */
   --line: solid 1px var(--lineColor);
 
-  /* Spacing */
-  --space-xxs:  4px;
-  --space-xs:   8px;
-  --space-sm:   12px;
-  --space-md:   20px;
-  --space-lg:   32px;
-  --space-xl:   52px;
-  --space-xxl:  84px;
-
   /* Typography */
   --hometitle: 'Silkscreen', serif;
   --homebody: 'Nova Mono', sans-serif;
@@ -61,35 +52,6 @@ main {
   img {
     max-width: 100%;
     height: auto;
-  }
-
-  header {
-    color: var(--accent-color);
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: var(--headerHeight);
-    background: var(--headerBackground);
-    box-shadow: var(--level-2);
-    padding: 0 var(--containerPadding);
-  }
-  
-  header nav {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 600px;
-  }
-  
-  header nav a {
-    color: var(--accent-color);
-    text-decoration: none;
-    padding:.5rem;
-  
-  }
-  
-  header nav a + a {
-    margin-left: 10px;
   }
 
   .content-block {
@@ -447,27 +409,34 @@ _____________________________________________*/
 
 /* characteristics gallery 
 ____________________________________*/
-div.scroll-container {
-  overflow: auto;
-  white-space: nowrap;
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.scroll-container img{
+  height: 400px; /* Set your desired height */
+  object-fit: cover; /* Ensures the image covers the specified height while maintaining aspect ratio */
+  width: auto; /* Adjust width automatically */
+  max-width: 100%; 
   padding: 10px;
 }
 
-div.scroll-container img {
-  padding: 10px;
+@media (max-width: 768px) {
+  .image-container img {
+    height: 250px; /* Adjust for smaller screens */
+  }
 }
 
-.img{
-  max-width: 50%;
-  height: auto;
+@media (max-width: 480px) {
+  .image-container img {
+    height: 100px;
+  }
 }
 
-.img-v{
-  max-width: 25%;
-  height: auto;
-}
 
-/* reponsive video */
+/* reponsive video 
+_________________________________________*/
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */

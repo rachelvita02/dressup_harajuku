@@ -1,10 +1,10 @@
 let state = {
-  shirt: 0,
-  bottom: 0,
-  socks: 0,
-  shoes: 0,
-  acc: 0,
-  dress: 0,
+  shirt: -1,
+  bottom: -1,
+  socks: -1,
+  shoes: -1,
+  acc: -1,
+  dress: -1,
 };
 
 nextshirt();

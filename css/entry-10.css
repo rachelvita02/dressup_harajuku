@@ -46,9 +46,9 @@
 /* colors */
 :root{
 --white:#CBC9CC;
---pink: #FF7BD1;
+--pink: #f550bb;
 --eggplant: #3E3F5F;
---purp: #F3DBFE;
+--purp: #dcadf1;
 --yellow: #EADB7E;
 
 --highlight:var(--blue);
